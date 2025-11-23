@@ -5,7 +5,11 @@ const { registerUser, loginUser, getUserInfo } = require ("../controllers/authCo
 const router = express.Router ();
 
 router.post ("/register", registerUser);
+// router.post("/register", (req, res) => {
+//     console.log("REQ BODY:", req.body);
+//     res.send("Test works");
+// });// 
 router.post ("/login", loginUser);
-router.get ("/getUser", protect, getUserInfo);
+// router.get ("/getUser", protect, getUserInfo);
 
 module.exports = router;

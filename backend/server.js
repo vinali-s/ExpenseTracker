@@ -1,12 +1,9 @@
-require ("dotenv").config;
+require ("dotenv").config();
 const express = require ("express");
 const cors = require ("cors");
 const path = require ("path");
 const connectDB = require ("./config/db");
 const authRoutes = require ("./routes/authRoutes");
-const expenseRoutes = require ("./routes/expenses");
-const incomeRoutes = require ("./routes/income");
-const { connect } = require("http2");
 
 const app = express ();
 
