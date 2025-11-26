@@ -6,7 +6,7 @@ exports.addExpense = async (req, res) => {
     const userId = req.user._id;
 
     try{
-        const {category, amount, date } = req.body;    
+        const {icon, category, amount, date } = req.body;    
 
         //validation check for missing fields
         if(!category || !amount || !date ){
